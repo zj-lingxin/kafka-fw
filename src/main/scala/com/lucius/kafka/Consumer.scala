@@ -32,7 +32,6 @@ object Consumer extends LazyLogging{
       while(it.hasNext){
         logger.info("#############################")
         val record = it.next()
-
         logger.info(record.offset() + "" +record.key()+ "" +record.value())
 
       }
